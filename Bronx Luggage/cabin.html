@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cabin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="carouselExampleSlidesOnly" class="carousel slide bg-dark" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img id="pro-slider" src="img/The bst web for luggages.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img id="pro-slider" src="img/ORDERS.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img id="pro-slider" src="img/5-STARS.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+    <div id="visitorCount">Visitors: 0</div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><span style="color: orange;"><strong>BRONX
+                    </strong></span>LUGGAGE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">SHOP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="explore.html">EXPLORE US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="head-pic">
+        <div>
+            <h1><span style="font-size: 80px;">Cabin</span> <span style="color: orange;"><strong>BRONX
+                    </strong></span>LUGGAGE</h1>
+            <p class="lead">Discover the finest Cabins</p>
+            <a href="shop.html" class="btn btn-warning btn-lg">Go Back</a>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="dropdown text-center p-4">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Shop By Category
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#men">Men</a></li>
+                <li><a class="dropdown-item" href="#women">Women</a></li>
+                <li><a class="dropdown-item" href="#kids">Kids</a></li>
+            </ul>
+        </div>
+        <div class="row text-center p-4">
+            <h1 id="women">Women</h1>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img
+                        src="https://baage.com/cdn/shop/files/d2fdf7b6accaa2aace5c464d767f4d31_346e6d26-eba0-420c-835d-123c6a5ab995_500x.jpg?v=1714740393">
+                    <div class="card-body">
+                        <h5 class="card-title">55cm FLOPPY</h5>
+                        <p class="card-text">$249.99</p>
+                        <a onclick="openPopup()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup()">×</button>
+                    <img src="https://baage.com/cdn/shop/files/d2fdf7b6accaa2aace5c464d767f4d31_346e6d26-eba0-420c-835d-123c6a5ab995_500x.jpg?v=1714740393"
+                        alt="Product Image">
+                    <h3>55cm FLOPPY</h3>
+                    <p>$249.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/products/BD-20606-1-HD_500x.jpg?v=1675958485">
+                    <div class="card-body">
+                        <h5 class="card-title">55cm BROWN</h5>
+                        <p class="card-text">$79.99</p>
+                        <a onclick="openPopupA()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay1">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopupA()">×</button>
+                    <img src="https://baage.com/cdn/shop/products/BD-20606-1-HD_500x.jpg?v=1675958485"
+                        alt="Product Image">
+                    <h3>55cm BROWN</h3>
+                    <p>$79.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/products/BD-15829-1-HD_500x.jpg?v=1677080536">
+                    <div class="card-body">
+                        <h5 class="card-title">50cm JOANNA-E</h5>
+                        <p class="card-text">$199.99</p>
+                        <a onclick="openPopup2()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay2">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup2()">×</button>
+                    <img src="https://baage.com/cdn/shop/products/BD-15829-1-HD_500x.jpg?v=1677080536"
+                        alt="Product Image">
+                    <h3>50cm JOANNA-E</h3>
+                    <p>$199.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center p-4">
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/products/BD-15571-1-HD_500x.jpg?v=1676990521">
+                    <div class="card-body">
+                        <h5 class="card-title">46cm JASMIN-E</h5>
+                        <p class="card-text">$249.99</p>
+                        <a onclick="openPopup3()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay3">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup3()">×</button>
+                    <img src="https://baage.com/cdn/shop/products/BD-15571-1-HD_500x.jpg?v=1676990521"
+                        alt="Product Image">
+                    <h3>46cm JASMIN-E</h3>
+                    <p>$249.99</p>
+                    <div class="ratings">
+                        <div class="star-rating">
+                            <span class="star" data-value="1">&#9733;</span>
+                            <span class="star" data-value="2">&#9733;</span>
+                            <span class="star" data-value="3">&#9733;</span>
+                            <span class="star" data-value="4">&#9733;</span>
+                            <span class="star" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/files/429449d56450d5c3ffb462da17f1daf2_500x.jpg?v=1702666042">
+                    <div class="card-body">
+                        <h5 class="card-title">premium</h5>
+                        <p class="card-text">$79.99</p>
+                        <a onclick="openPopup4()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay4">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup4()">×</button>
+                    <img src="https://baage.com/cdn/shop/files/429449d56450d5c3ffb462da17f1daf2_500x.jpg?v=1702666042"
+                        alt="Product Image">
+                    <h3>Premium</h3>
+                    <p>$79.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/products/BD-16519-1-HD_500x.jpg?v=1676990330">
+                    <div class="card-body">
+                        <h5 class="card-title">55cm PHENIX</h5>
+                        <p class="card-text">$199.99</p>
+                        <a onclick="openPopup5()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay5">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup5()">×</button>
+                    <img src="https://baage.com/cdn/shop/products/BD-16519-1-HD_500x.jpg?v=1676990330"
+                        alt="Product Image">
+                    <h3>55cm PHENIX</h3>
+                    <p>$199.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row text-center p-4">
+            <h1 id="men">Men</h1>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/products/BD-20606-1-HD_500x.jpg?v=1675958485">
+                    <div class="card-body">
+                        <h5 class="card-title">56cm DANUBE</h5>
+                        <p class="card-text">$249.99</p>
+                        <a onclick="openPopup6()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay6">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup6()">×</button>
+                    <img src="https://baage.com/cdn/shop/products/BD-20606-1-HD_500x.jpg?v=1675958485"
+                        alt="Product Image">
+                    <h3>56cm DANUBE</h3>
+                    <p>$249.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/products/BD-20622-1-HD_500x.jpg?v=1675958507">
+                    <div class="card-body">
+                        <h5 class="card-title">55cm TAURUS</h5>
+                        <p class="card-text">$79.99</p>
+                        <a onclick="openPopup7()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay7">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup7()">×</button>
+                    <img src="https://baage.com/cdn/shop/products/BD-20622-1-HD_500x.jpg?v=1675958507"
+                        alt="Product Image">
+                    <h3>55cm TAURUS</h3>
+                    <p>$79.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/products/BD-20586-1-HD_500x.jpg?v=1675958338">
+                    <div class="card-body">
+                        <h5 class="card-title">45cm QUEENS-A</h5>
+                        <p class="card-text">$199.99</p>
+                        <a onclick="openPopup8()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay8">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup8()">×</button>
+                    <img src="https://baage.com/cdn/shop/products/BD-20586-1-HD_500x.jpg?v=1675958338"
+                        alt="Product Image">
+                    <h3>45cm QUEENS-A</h3>
+                    <p>$199.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center p-4">
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/products/BD-20109-1-HD_500x.jpg?v=1676912015">
+                    <div class="card-body">
+                        <h5 class="card-title">75cm PEGASE</h5>
+                        <p class="card-text">$249.99</p>
+                        <a onclick="openPopup9()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay9">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup9()">×</button>
+                    <img src="https://baage.com/cdn/shop/products/BD-20109-1-HD_500x.jpg?v=1676912015"
+                        alt="Product Image">
+                    <h3>75cm PEGASE</h3>
+                    <p>$249.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/files/9e3f30c62b7e50d983ff88a21b444b84_500x.jpg?v=1700831941">
+                    <div class="card-body">
+                        <h5 class="card-title">53cm CASSIOPEE</h5>
+                        <p class="card-text">$79.99</p>
+                        <a onclick="openPopup10()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay10">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup10()">×</button>
+                    <img src="https://baage.com/cdn/shop/files/9e3f30c62b7e50d983ff88a21b444b84_500x.jpg?v=1700831941"
+                        alt="Product Image">
+                    <h3>53cm CASSIOPEE</h3>
+                    <p>$79.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/files/648dc0590499a910c5e438612ccda6da_500x.jpg?v=1712830803">
+                    <div class="card-body">
+                        <h5 class="card-title">55cm ORION</h5>
+                        <p class="card-text">$199.99</p>
+                        <a onclick="openPopup11()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay11">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup11()">×</button>
+                    <img src="https://baage.com/cdn/shop/files/648dc0590499a910c5e438612ccda6da_500x.jpg?v=1712830803"
+                        alt="Product Image">
+                    <h3>55cm ORION</h3>
+                    <p>$199.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row text-center p-4">
+            <h1 id="kids">Kids</h1>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/products/BD-16281-1-HD_500x.jpg?v=1676990402">
+                    <div class="card-body">
+                        <h5 class="card-title">64cm PRETORIA</h5>
+                        <p class="card-text">$249.99</p>
+                        <a onclick="openPopup12()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay12">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup12()">×</button>
+                    <img src=https://baage.com/cdn/shop/products/BD-16281-1-HD_500x.jpg?v=1676990402"
+                        alt="Product Image">
+                    <h3>64cm PRETORIA</h3>
+                    <p>$249.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/products/BD-19965-1-HD_500x.jpg?v=1676912447">
+                    <div class="card-body">
+                        <h5 class="card-title">46cm ZURICH</h5>
+                        <p class="card-text">$79.99</p>
+                        <a onclick="openPopup13()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay13">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup13()">×</button>
+                    <img src="https://baage.com/cdn/shop/products/BD-19965-1-HD_500x.jpg?v=1676912447"
+                        alt="Product Image">
+                    <h3>46cm ZURICH</h3>
+                    <p>$79.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/products/BD-16236-1-HD_500x.jpg?v=1676990431">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Carry-on</h5>
+                        <p class="card-text">$199.99</p>
+                        <a onclick="openPopup14()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay14">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup14()">×</button>
+                    <img src="https://baage.com/cdn/shop/products/BD-16236-1-HD_500x.jpg?v=1676990431"
+                        alt="Product Image">
+                    <h3>Premium Carry-on</h3>
+                    <p>$199.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Need Help<span style="color: orange;font-size: larger;">?</span></h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5>Call us:</h5>
+                            <a class="text-light" href="">0123456789</a>
+                            <a class="text-light" href="">0123456789</a>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Email:</h5>
+                            <a class="text-light" href="">Sample@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>Links</h3>
+                    <a class="text-light" href="feedback.html">Feedback</a><br>
+                    <a class="text-light" href="explore.html">Explore Us</a><br>
+                    <a class="text-light" href="faq.html">FAQ</a><br>
+                    <a class="text-light" href="shop.html">Shop</a><br>
+                    <a class="text-light" href="gallery.html">Our Gallery</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Scan For<br> Location</h3>
+                    <img style="height: 150px;" src="img/qrcode_159136397_947eaec0af2dea55891dd95c7d765ce9.png">
+                </div>
+            </div>
+            <br>
+            <hr><br>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="mb-3">We Accept Payments Through</h5>
+                    <div class="pay-link">
+                        <a id="pay-link" href="#" class="text-light" style="font-size: 24px;">Visa</a><br>
+                        <a id="pay-link" href="#" class="text-light" style="font-size: 24px;">MasterCard</a><br>
+                        <a id="pay-link" href="#" class="text-light" style="font-size: 24px;">PayPal</a><br>
+                        <a id="pay-link" href="#" class="text-light" style="font-size: 24px;">Stripe</a>
+                        <br><br><a href="faq.html" class="btn btn-warning btn-lg me-3">FAQ</a>
+                        <a href="feedback.html" class="btn btn-warning btn-lg me-3">Give Feedback</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 text-dark">
+                    <div class="card p-4 shadow-lg">
+                        <h5 class="card-title mb-3">Subscribe to Our Newsletter</h5>
+                        <p class="card-text mb-4">Stay updated with the latest news and offers. Subscribe now!</p>
+                        <form action="#" method="post">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Enter your email" required>
+                                <butto class="btn btn-primary" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2025 Bronx Luggage. All Right Reserved</p>
+            <div id="ticker">
+                <div id="tickerContent">Loading...</div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

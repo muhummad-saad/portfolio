@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="carouselExampleSlidesOnly" class="carousel slide bg-dark" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img id="pro-slider" src="img/The bst web for luggages.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img id="pro-slider" src="img/ORDERS.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img id="pro-slider" src="img/5-STARS.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+    <div id="visitorCount">Visitors: 0</div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><span style="color: orange;"><strong>BRONX
+                    </strong></span>LUGGAGE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">SHOP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="explore.html">EXPLORE US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="head-pic">
+        <div>
+            <h1><span style="font-size: 80px;">Sets</span> <span style="color: orange;"><strong>BRONX
+                    </strong></span>LUGGAGE</h1>
+            <p class="lead">Discover the finest luggage Sets</p>
+            <a href="shop.html" class="btn btn-warning btn-lg">Go Back</a>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="dropdown text-center p-4">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Shop By Category
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#men">Men</a></li>
+                <li><a class="dropdown-item" href="#women">Women</a></li>
+                <li><a class="dropdown-item" href="#kids">Kids</a></li>
+            </ul>
+        </div>
+        <div class="row text-center p-4">
+            <h1 id="men">Men</h1>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/products/BD-15976-1_500x.jpg?v=1677081067">
+                    <div class="card-body">
+                        <h5 class="card-title">set of 2</h5>
+                        <p class="card-text">$249.99</p>
+                        <a onclick="openPopup()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup()">×</button>
+                    <img src="https://baage.com/cdn/shop/products/BD-15976-1_500x.jpg?v=1677081067" alt="Product Image">
+                    <h3>set of 2</h3>
+                    <p>$249.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img
+                        src="https://baage.com/cdn/shop/files/52573118f75e9f98d878c74a238ee99d_6dccdef2-c228-4f8c-84c2-acfeb0c2ee63_500x.jpg?v=1736789970">
+                    <div class="card-body">
+                        <h5 class="card-title">set of 2</h5>
+                        <p class="card-text">$79.99</p>
+                        <a onclick="openPopupA()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay1">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopupA()">×</button>
+                    <img src="https://baage.com/cdn/shop/files/52573118f75e9f98d878c74a238ee99d_6dccdef2-c228-4f8c-84c2-acfeb0c2ee63_500x.jpg?v=1736789970"
+                        alt="Product Image">
+                    <h3>set of 2</h3>
+                    <p>$79.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/files/5882ad8e14ad37be1819be360a7b4d81_500x.jpg?v=1735830600">
+                    <div class="card-body">
+                        <h5 class="card-title">set of 2</h5>
+                        <p class="card-text">$199.99</p>
+                        <a onclick="openPopup2()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay2">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup2()">×</button>
+                    <img src="https://baage.com/cdn/shop/files/5882ad8e14ad37be1819be360a7b4d81_500x.jpg?v=1735830600"
+                        alt="Product Image">
+                    <h3>set of 2</h3>
+                    <p>$199.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center p-4">
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/files/1ba731096abe3d6e43f644181d0c6498_500x.jpg?v=1736786222">
+                    <div class="card-body">
+                        <h5 class="card-title">set of 2</h5>
+                        <p class="card-text">$249.99</p>
+                        <a onclick="openPopup3()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay3">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup3()">×</button>
+                    <img src="https://baage.com/cdn/shop/files/1ba731096abe3d6e43f644181d0c6498_500x.jpg?v=1736786222"
+                        alt="Product Image">
+                    <h3>set of 2</h3>
+                    <p>$249.99</p>
+                    <div class="ratings">
+                        <div class="star-rating">
+                            <span class="star" data-value="1">&#9733;</span>
+                            <span class="star" data-value="2">&#9733;</span>
+                            <span class="star" data-value="3">&#9733;</span>
+                            <span class="star" data-value="4">&#9733;</span>
+                            <span class="star" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/files/71137140350b3a4269f24fdc9b7ce0a4_500x.jpg?v=1736772706">
+                    <div class="card-body">
+                        <h5 class="card-title">premium set of 2</h5>
+                        <p class="card-text">$79.99</p>
+                        <a onclick="openPopup4()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay4">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup4()">×</button>
+                    <img src="https://baage.com/cdn/shop/files/71137140350b3a4269f24fdc9b7ce0a4_500x.jpg?v=1736772706"
+                        alt="Product Image">
+                    <h3>Premium set of 2</h3>
+                    <p>$79.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/files/2d42044b97988747bf1b8fe16172630f_500x.jpg?v=1736772609">
+                    <div class="card-body">
+                        <h5 class="card-title">set of 2</h5>
+                        <p class="card-text">$199.99</p>
+                        <a onclick="openPopup5()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay5">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup5()">×</button>
+                    <img src="https://baage.com/cdn/shop/files/2d42044b97988747bf1b8fe16172630f_500x.jpg?v=1736772609"
+                        alt="Product Image">
+                    <h3>set of 2</h3>
+                    <p>$199.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row text-center p-4">
+            <h1 id="women">Women</h1>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/files/2f1ecd67e381ade4a343be4979ca3495_500x.jpg?v=1736771967">
+                    <div class="card-body">
+                        <h5 class="card-title">set of 2</h5>
+                        <p class="card-text">$249.99</p>
+                        <a onclick="openPopup6()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay6">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup6()">×</button>
+                    <img src="https://baage.com/cdn/shop/files/2f1ecd67e381ade4a343be4979ca3495_500x.jpg?v=1736771967"
+                        alt="Product Image">
+                    <h3>set of 2</h3>
+                    <p>$249.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/products/BD-13061-1-HD_500x.jpg?v=1676981510">
+                    <div class="card-body">
+                        <h5 class="card-title">set of 2</h5>
+                        <p class="card-text">$79.99</p>
+                        <a onclick="openPopup7()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay7">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup7()">×</button>
+                    <img src="https://baage.com/cdn/shop/products/BD-13061-1-HD_500x.jpg?v=1676981510"
+                        alt="Product Image">
+                    <h3>set of 2</h3>
+                    <p>$79.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/files/67f3f929139a8a5ac694792c5fdda047_500x.jpg?v=1736769742">
+                    <div class="card-body">
+                        <h5 class="card-title">set of 2</h5>
+                        <p class="card-text">$199.99</p>
+                        <a onclick="openPopup8()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay8">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup8()">×</button>
+                    <img src="https://baage.com/cdn/shop/files/67f3f929139a8a5ac694792c5fdda047_500x.jpg?v=1736769742"
+                        alt="Product Image">
+                    <h3>set of 2</h3>
+                    <p>$199.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center p-4">
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/files/eb109a564111b1dbb623220f11d620f0_500x.jpg?v=1736770166">
+                    <div class="card-body">
+                        <h5 class="card-title">set of 2</h5>
+                        <p class="card-text">$249.99</p>
+                        <a onclick="openPopup9()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay9">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup9()">×</button>
+                    <img src="https://baage.com/cdn/shop/files/eb109a564111b1dbb623220f11d620f0_500x.jpg?v=1736770166"
+                        alt="Product Image">
+                    <h3>set of 2</h3>
+                    <p>$249.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/files/ac2d72d3dd72ae952e526f848586b807_500x.jpg?v=1736771160">
+                    <div class="card-body">
+                        <h5 class="card-title">set of 2</h5>
+                        <p class="card-text">$79.99</p>
+                        <a onclick="openPopup10()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay10">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup10()">×</button>
+                    <img src="https://baage.com/cdn/shop/files/ac2d72d3dd72ae952e526f848586b807_500x.jpg?v=1736771160"
+                        alt="Product Image">
+                    <h3>set of 2</h3>
+                    <p>$79.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-0">
+                    <img src="https://baage.com/cdn/shop/files/9bef2d2326f4aa107fb35ac00d1ef48a_500x.jpg?v=1736771319">
+                    <div class="card-body">
+                        <h5 class="card-title">set of 2</h5>
+                        <p class="card-text">$199.99</p>
+                        <a onclick="openPopup11()" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-overlay" id="popup-overlay11">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup11()">×</button>
+                    <img src="https://baage.com/cdn/shop/files/9bef2d2326f4aa107fb35ac00d1ef48a_500x.jpg?v=1736771319"
+                        alt="Product Image">
+                    <h3>set of 2</h3>
+                    <p>$199.99</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row text-center p-4">
+            <h1 id="kids">Kids</h1>
+            <h1 class="text-center" style="text-decoration: underline;">Not Available</h1>
+        </div>
+        <footer class="bg-dark text-light py-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Need Help<span style="color: orange;font-size: larger;">?</span></h3>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5>Call us:</h5>
+                                <a class="text-light" href="">0123456789</a>
+                                <a class="text-light" href="">0123456789</a>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Email:</h5>
+                                <a class="text-light" href="">Sample@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Links</h3>
+                        <a class="text-light" href="feedback.html">Feedback</a><br>
+                        <a class="text-light" href="explore.html">Explore Us</a><br>
+                        <a class="text-light" href="faq.html">FAQ</a><br>
+                        <a class="text-light" href="shop.html">Shop</a><br>
+                        <a class="text-light" href="gallery.html">Our Gallery</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Scan For<br> Location</h3>
+                        <img style="height: 150px;" src="img/qrcode_159136397_947eaec0af2dea55891dd95c7d765ce9.png">
+                    </div>
+                </div>
+                <br>
+                <hr><br>
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-4">
+                        <h5 class="mb-3">We Accept Payments Through</h5>
+                        <div class="pay-link">
+                            <a id="pay-link" href="#" class="text-light" style="font-size: 24px;">Visa</a><br>
+                            <a id="pay-link" href="#" class="text-light" style="font-size: 24px;">MasterCard</a><br>
+                            <a id="pay-link" href="#" class="text-light" style="font-size: 24px;">PayPal</a><br>
+                            <a id="pay-link" href="#" class="text-light" style="font-size: 24px;">Stripe</a>
+                            <br><br><a href="faq.html" class="btn btn-warning btn-lg me-3">FAQ</a>
+                            <a href="feedback.html" class="btn btn-warning btn-lg me-3">Give Feedback</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text-dark">
+                        <div class="card p-4 shadow-lg">
+                            <h5 class="card-title mb-3">Subscribe to Our Newsletter</h5>
+                            <p class="card-text mb-4">Stay updated with the latest news and offers. Subscribe now!</p>
+                            <form action="#" method="post">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                                    <butto class="btn btn-primary" type="submit">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <p class="text-center">&copy; 2025 Bronx Luggage. All Right Reserved</p>
+                <div id="ticker">
+                    <div id="tickerContent">Loading...</div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>

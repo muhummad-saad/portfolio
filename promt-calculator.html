@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>prompt-Calculator</title>
+    <style>
+        p{
+            text-align: center;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <p>refresh to do it again | or Ctrl+R</p>
+    <p>if it didn't show your answer then do it again and check your spellings</p>
+    <script>
+        var first = +prompt('Write your first number:');
+        var second = +prompt('Write your second number:');
+        var third = prompt('plus, minus, multiply, divide ??');
+
+        if (third === 'plus') {
+            alert(first + second);
+        }
+        if (third === 'minus') {
+            alert(first - second);
+        }
+        if (third === 'multiply') {
+            alert(first * second);
+        }
+        if (third === 'divide') {
+            alert(first / second);
+        }
+    </script>
+</body>
+</html>

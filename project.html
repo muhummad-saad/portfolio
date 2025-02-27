@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            background-image: url(https://img.freepik.com/free-vector/black-geometric-memphis-social-banner_53876-116843.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #28a745;
+        }
+
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        /* Card Hover Effect */
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 15px rgba(40, 167, 69, 0.3);
+        }
+
+        /* Button Hover Effect */
+        .btn-success:hover {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Muhummad Saad Ali</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="text-center text-success fw-bold">My Projects</h2>
+        <p class="text-center mb-4">Here are some of the projects I've worked on.</p>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light">
+                    <img src="img/bronx luggage.png" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title text-center"><span class="text-success fw-bold">Bronx Luggage</span>:</h5>
+                        <p class="card-text">Website made with html, css, bootstrap and js</p>
+                        <div class="text-center">
+                            <a href="Bronx Luggage/index.html" target="_blank" class="btn btn-success">Preview</a>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light">
+                    <img src="img/" class="card-img-top" alt="Not Available">
+                    <div class="card-body">
+                        <h5 class="card-title text-center"><span class="text-success fw-bold">prompt-Calculator</span>:</h5>
+                        <p class="card-text">simple prompt-calculator made with js and html</p>
+                        <div class="text-center">
+                            <a href="promt-calculator.html" target="_blank" class="btn btn-success">Preview</a>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light">
+                    <img src="img/dash.png" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center"><span class="text-success fw-bold">finace Dashboard</span>:</h5>
+                        <p class="card-text">Simple Finance Dashbaord made with html and css</p>
+                        <div class="text-center">
+                            <a href="finace dashboard.html" target="_blank" class="btn btn-success">Preview</a>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

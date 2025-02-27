@@ -1,0 +1,25 @@
+body {
+    background-image: url(https://img.freepik.com/free-vector/black-geometric-memphis-social-banner_53876-116843.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    text-align: center;
+}
+
+@media (min-width: 768px) { /* Adjusts for larger screens */
+    .text-container {
+        justify-content: flex-start;
+        padding-left: 20%;
+    }
+}
+.name{
+    color: white;
+    font-size: 50px;
+}

@@ -177,10 +177,19 @@
             background-color: green;
             color: white;
         }
+        #draggable {
+            position: absolute;   /* free movement */
+            top: 40%;             /* start somewhere in the page */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: grab;
+            z-index: 9999;        /* stay above everything */
+        }
+
     </style>
 </head>
 <script>
-    // Animate on scroll (your existing script)
+    // Animate on scroll (your code)
     document.addEventListener("DOMContentLoaded", function () {
         const observer = new IntersectionObserver(
             (entries, observer) => {
@@ -197,11 +206,8 @@
         document.querySelectorAll(".animate-on-scroll").forEach(el => observer.observe(el));
     });
 
-    // 🔹 Draggable Name Feature
+    // Draggable Feature
     const draggable = document.getElementById("draggable");
-    draggable.style.position = "absolute"; // allow free movement
-    draggable.style.cursor = "grab"; // show draggable cursor
-
     let offsetX, offsetY, isDragging = false;
 
     draggable.addEventListener("mousedown", (e) => {
@@ -226,7 +232,9 @@
 
 <body>
     <div class="container text-container">
-        <h1 class="name animate-on-scroll" id="draggable">Muhummad Saad Ali</h1>
+        <!-- Change this line -->
+<h1 class="name animate-on-scroll" id="draggable">Muhummad Saad Ali</h1>
+
         <h2 class="subtitle animate-on-scroll">I'm a passionate "<span class="underline">Front-end Developer</span>" from Karachi</h2>
 
         <div class="nav-links animate-on-scroll">
@@ -247,4 +255,5 @@
 </body>
 
 </html>
+
 

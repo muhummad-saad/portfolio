@@ -134,8 +134,7 @@
 </head>
 
 <body>
-    <!-- 🔹 Draggable Name is OUTSIDE the container -->
-    <h1 class="name animate-on-scroll" id="draggable">Muhummad Saad Ali</h1>
+    <h1 class="name animate-on-scroll">Muhummad Saad Ali</h1>
 
     <div class="container text-container">
         <h2 class="subtitle animate-on-scroll">I'm a passionate "<span class="underline">Front-end Developer</span>" from Karachi</h2>
@@ -171,29 +170,6 @@
             );
 
             document.querySelectorAll(".animate-on-scroll").forEach(el => observer.observe(el));
-        });
-
-        // 🔹 Draggable Feature
-        const draggable = document.getElementById("draggable");
-        let offsetX, offsetY, isDragging = false;
-
-        draggable.addEventListener("mousedown", (e) => {
-            isDragging = true;
-            offsetX = e.clientX - draggable.offsetLeft;
-            offsetY = e.clientY - draggable.offsetTop;
-            draggable.style.cursor = "grabbing";
-        });
-
-        document.addEventListener("mousemove", (e) => {
-            if (isDragging) {
-                draggable.style.left = (e.clientX - offsetX) + "px";
-                draggable.style.top = (e.clientY - offsetY) + "px";
-            }
-        });
-
-        document.addEventListener("mouseup", () => {
-            isDragging = false;
-            draggable.style.cursor = "grab";
         });
     </script>
 </body>

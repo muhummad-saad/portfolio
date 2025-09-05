@@ -41,6 +41,13 @@
             transform: translateY(0);
         }
 
+        @media (min-width: 768px) {
+            .text-container {
+                padding-left: 5%;
+                height: 100vh;
+            }
+        }
+
         .name {
             color: white;
             font-size: 60px;
@@ -48,7 +55,6 @@
             text-transform: uppercase;
             letter-spacing: 3px;
         }
-
 
         .subtitle {
             color: white;
@@ -105,6 +111,56 @@
             color: green;
         }
 
+        @media (min-width: 768px) {
+            .nav-links {
+                justify-content: flex-start;
+            }
+
+            .social-icons {
+                justify-content: flex-start;
+                margin-left: 30px;
+            }
+        }
+
+        @media (max-width: 425px) {
+            .text-container {
+                padding: 10px;
+                height: auto;
+            }
+
+            .name {
+                font-size: 40px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+                margin-top: 5px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                margin-top: 15px;
+            }
+
+            .nav-links a {
+                font-size: 18px;
+                padding: 6px 10px;
+            }
+
+            .social-icons {
+                flex-direction: row;
+                gap: 10px;
+                margin-top: 15px;
+                justify-content: center;
+            }
+
+            .social-icons a {
+                font-size: 25px;
+            }
+        }
+
         .cv-button {
             display: inline-block;
             font-size: 18px;
@@ -125,9 +181,8 @@
 </head>
 
 <body>
-    <h1 class="name animate-on-scroll">Muhummad Saad Ali</h1>
-
     <div class="container text-container">
+        <h1 class="name animate-on-scroll">Muhummad Saad Ali</h1>
         <h2 class="subtitle animate-on-scroll">I'm a passionate "<span class="underline">Front-end Developer</span>" from Karachi</h2>
 
         <div class="nav-links animate-on-scroll">
@@ -146,7 +201,6 @@
     </div>
 
     <script>
-        // Animate on scroll
         document.addEventListener("DOMContentLoaded", function () {
             const observer = new IntersectionObserver(
                 (entries, observer) => {
@@ -164,5 +218,5 @@
         });
     </script>
 </body>
-</html>
 
+</html>

@@ -41,19 +41,22 @@
             transform: translateY(0);
         }
 
-        @media (min-width: 768px) {
-            .text-container {
-                padding-left: 5%;
-                height: 100vh;
-            }
-        }
-
         .name {
             color: white;
             font-size: 60px;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 3px;
+        }
+
+        /* 🔹 Draggable style */
+        #draggable {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: grab;
+            z-index: 9999;
         }
 
         .subtitle {
@@ -111,56 +114,6 @@
             color: green;
         }
 
-        @media (min-width: 768px) {
-            .nav-links {
-                justify-content: flex-start;
-            }
-
-            .social-icons {
-                justify-content: flex-start;
-                margin-left: 30px;
-            }
-        }
-
-        @media (max-width: 425px) {
-            .text-container {
-                padding: 10px;
-                height: auto;
-            }
-
-            .name {
-                font-size: 40px;
-            }
-
-            .subtitle {
-                font-size: 18px;
-                margin-top: 5px;
-            }
-
-            .nav-links {
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                margin-top: 15px;
-            }
-
-            .nav-links a {
-                font-size: 18px;
-                padding: 6px 10px;
-            }
-
-            .social-icons {
-                flex-direction: row;
-                gap: 10px;
-                margin-top: 15px;
-                justify-content: center;
-            }
-
-            .social-icons a {
-                font-size: 25px;
-            }
-        }
-
         .cv-button {
             display: inline-block;
             font-size: 18px;
@@ -177,64 +130,14 @@
             background-color: green;
             color: white;
         }
-        #draggable {
-            position: absolute;   /* free movement */
-            top: 40%;             /* start somewhere in the page */
-            left: 50%;
-            transform: translate(-50%, -50%);
-            cursor: grab;
-            z-index: 9999;        /* stay above everything */
-        }
-
     </style>
 </head>
-<script>
-    // Animate on scroll (your code)
-    document.addEventListener("DOMContentLoaded", function () {
-        const observer = new IntersectionObserver(
-            (entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("visible");
-                        observer.unobserve(entry.target);
-                    }
-                });
-            },
-            { threshold: 0.3 }
-        );
-
-        document.querySelectorAll(".animate-on-scroll").forEach(el => observer.observe(el));
-    });
-
-    // Draggable Feature
-    const draggable = document.getElementById("draggable");
-    let offsetX, offsetY, isDragging = false;
-
-    draggable.addEventListener("mousedown", (e) => {
-        isDragging = true;
-        offsetX = e.clientX - draggable.offsetLeft;
-        offsetY = e.clientY - draggable.offsetTop;
-        draggable.style.cursor = "grabbing";
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (isDragging) {
-            draggable.style.left = (e.clientX - offsetX) + "px";
-            draggable.style.top = (e.clientY - offsetY) + "px";
-        }
-    });
-
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        draggable.style.cursor = "grab";
-    });
-</script>
 
 <body>
-    <div class="container text-container">
-        <!-- Change this line -->
-<h1 class="name animate-on-scroll" id="draggable">Muhummad Saad Ali</h1>
+    <!-- 🔹 Draggable Name is OUTSIDE the container -->
+    <h1 class="name animate-on-scroll" id="draggable">Muhummad Saad Ali</h1>
 
+    <div class="container text-container">
         <h2 class="subtitle animate-on-scroll">I'm a passionate "<span class="underline">Front-end Developer</span>" from Karachi</h2>
 
         <div class="nav-links animate-on-scroll">
@@ -252,8 +155,46 @@
         <a href="cv.pdf" target="_blank" download class="cv-button animate-on-scroll">Download CV</a>
     </div>
 
+    <script>
+        // Animate on scroll
+        document.addEventListener("DOMContentLoaded", function () {
+            const observer = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                { threshold: 0.3 }
+            );
+
+            document.querySelectorAll(".animate-on-scroll").forEach(el => observer.observe(el));
+        });
+
+        // 🔹 Draggable Feature
+        const draggable = document.getElementById("draggable");
+        let offsetX, offsetY, isDragging = false;
+
+        draggable.addEventListener("mousedown", (e) => {
+            isDragging = true;
+            offsetX = e.clientX - draggable.offsetLeft;
+            offsetY = e.clientY - draggable.offsetTop;
+            draggable.style.cursor = "grabbing";
+        });
+
+        document.addEventListener("mousemove", (e) => {
+            if (isDragging) {
+                draggable.style.left = (e.clientX - offsetX) + "px";
+                draggable.style.top = (e.clientY - offsetY) + "px";
+            }
+        });
+
+        document.addEventListener("mouseup", () => {
+            isDragging = false;
+            draggable.style.cursor = "grab";
+        });
+    </script>
 </body>
-
 </html>
-
-

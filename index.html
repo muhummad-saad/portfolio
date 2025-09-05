@@ -179,10 +179,54 @@
         }
     </style>
 </head>
+<script>
+    // Animate on scroll (your existing script)
+    document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.3 }
+        );
+
+        document.querySelectorAll(".animate-on-scroll").forEach(el => observer.observe(el));
+    });
+
+    // 🔹 Draggable Name Feature
+    const draggable = document.getElementById("draggable");
+    draggable.style.position = "absolute"; // allow free movement
+    draggable.style.cursor = "grab"; // show draggable cursor
+
+    let offsetX, offsetY, isDragging = false;
+
+    draggable.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        offsetX = e.clientX - draggable.offsetLeft;
+        offsetY = e.clientY - draggable.offsetTop;
+        draggable.style.cursor = "grabbing";
+    });
+
+    document.addEventListener("mousemove", (e) => {
+        if (isDragging) {
+            draggable.style.left = (e.clientX - offsetX) + "px";
+            draggable.style.top = (e.clientY - offsetY) + "px";
+        }
+    });
+
+    document.addEventListener("mouseup", () => {
+        isDragging = false;
+        draggable.style.cursor = "grab";
+    });
+</script>
 
 <body>
     <div class="container text-container">
-        <h1 class="name animate-on-scroll">Muhummad Saad Ali</h1>
+        <h1 class="name animate-on-scroll" id="draggable">Muhummad Saad Ali</h1>
         <h2 class="subtitle animate-on-scroll">I'm a passionate "<span class="underline">Front-end Developer</span>" from Karachi</h2>
 
         <div class="nav-links animate-on-scroll">
@@ -200,23 +244,7 @@
         <a href="cv.pdf" target="_blank" download class="cv-button animate-on-scroll">Download CV</a>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const observer = new IntersectionObserver(
-                (entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add("visible");
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                },
-                { threshold: 0.3 }
-            );
-
-            document.querySelectorAll(".animate-on-scroll").forEach(el => observer.observe(el));
-        });
-    </script>
 </body>
 
 </html>
+
